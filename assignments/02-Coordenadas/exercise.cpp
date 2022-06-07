@@ -10,8 +10,10 @@ int main()
   Rect r2(3,4);
   Rect r3;
   Rect r4;
-
+  Rect r5;
+  Rect r6;
   r3 = r1 + r2;
+  r5 = r1 - r2;
 
   std::cout << "Sumando coordenadas rectangulares:\n";
   std::cout << r1 << " + \n" << r2 << " = \n" << r3;
@@ -32,5 +34,22 @@ int main()
 
   std::cout << "Multiplicando coordenadas polares:\n";
   std::cout << p1 << " * \n" << p2 << " = \n" << p3;
+
+  std::cout << "Restando coordenadas rectangulares:\n";
+  std::cout << r1 << " - \n" << r2 << " = \n" << r5;
+
+  Polar p6(4,M_PI / 6);
+  r6 = r3 - p1;
+
+  std::cout << "Restando coordenadas rectangulares y polares:\n";
+  std::cout << r3 << " - \n" << p1 << " = \n" << r6;
+  
+  Polar p4(5, M_PI/ 6);
+  Polar p5;
+
+  p4 = p1 / p2;
+
+  std::cout << "Dividiendo coordenadas polares:\n";
+  std::cout << p1 << " / \n" << p2 << " = \n" << p4;
 
 }
